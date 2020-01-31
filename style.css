@@ -48,10 +48,15 @@ input[type=search]:focus{
 
 }
 
+footer {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
 /******************   ID's   ***********************/
 
 #nav-bar {
-
   height: 36px;
   margin-left: calc(50% - 490px);
   position: absolute;
@@ -70,7 +75,11 @@ input[type=search]:focus{
   width: 100%;
 }
 
-#big-footer{
+#big-footer {
+  width: 100%;
+  height: 200px;
+
+  margin: 2px 0 0 0;
 
 }
 
@@ -134,6 +143,29 @@ input[type=search]:focus{
 
 .home {
   border-left: none;
+}
+
+.bottom-box {
+  display: inline-block;
+  width: 25%;
+  height: 200px;
+  background-repeat: no-repeat;
+}
+
+.box1 {
+  background-image: url(/resources/promo_iphone5s.jpg);
+}
+
+.box2 {
+  background-image: url(/resources/promo_iphone5c.jpg);
+}
+
+.box3 {
+  background-image: url(/resources/promo_30_years.jpg);
+}
+
+.box4 {
+  background-image: url(/resources/promo_supplier_responsibility.jpg);
 }
 
 /***************   MEDIA QUERIES   *****************/
