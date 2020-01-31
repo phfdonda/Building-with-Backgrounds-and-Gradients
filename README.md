@@ -1,2 +1,39 @@
 # Building-with-Backgrounds-and-Gradients
-This is a clone of the Apple page of 2014, created as part of the Microverse course curriculum.
+
+  DESCRIPTION - This page was created as a clone of the Apple page of 2014, for the Microverse's HTML and CSS course curriculum. The original can be seen in the following url: "https://web.archive.org/web/20140301004610/http://www.apple.com/".
+
+  ### AUTHOR - Pedro Henrique Ferreira Donda
+    GitHub: https://github.com/phfdonda
+    LinkedIn: https://www.linkedin.com/in/pedro-donda-808621bb/
+
+
+ ## INDEX
+
+ ### 1.0 - NAV-BAR (nav-bar):
+  Links for other parts of the website; search bar. They should be positioned in line beside each other. The bar itself is positioned on top of the page, centered, detached from the border of the screen.
+  #### 1.1 - Navigation:
+    Links: "Home(Logo)", "Store", "Mac", "iPod", "iPhone", "iPad", "iTunes", "Support".
+
+    Expected behavior: on hover, changes background color for a darker one; on click, opens respective link in the same tab.
+  #### 1.2 - Search bar.
+    Expected behavior: on click, expands bar and changes its color for white.
+
+  ### 2.0 - MAIN (main):
+  Title, motivational phrase, call to action with link, all over large inspirational background image.
+  #### 2.1 - Text
+    Links: only one, to the motivational video.
+
+    Expected behavior: on click on any part of the text, opens the link for the iPad on the same tab. On hover over the CtA, it changes it to underline.
+
+  3.0 - BIG FOOTER (big-footer): positioned under the main part, a bar with four squares inline, full width, each contains an image and a link.
+    3.1 - Links: "iPhone 5 S", "iPhone 5 C", "Happy Birthday, Mac.", "Supplier Responsibilty".
+    3.2 - Expected behavior: on click on image, sends the user to the respective link on the same tab.
+
+  4.0 - SMALL FOOTER (small-footer): positioned at the bottom of the page, has two columns of links; the first has the contact to Apple and the legal Terms and Copyright; the second one contains other links, including one for choosing country.
+    4.1 - Links: First Column: "Apple Online Store", "Apple Retail Store", "reseller", "Terms of Use", "Privacy Policy"; Second Column: "Site Map", "Hot News", "RSS Feeds", "Media Info", "Environment", "Job Opportunities", "Contact Us", "Choose your country"(Flag of US).
+    4.2 - Expected behavior: links on hover, underlines; links on click, forward to the respective page in the same tab.
+
+
+ FINAL COMMENTS ***************************************************************
+
+ To quickly navigate the code, search for the respective section you want, like header or small-footer, preceded by an @, like this: @example.
