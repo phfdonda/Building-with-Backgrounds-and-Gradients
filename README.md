@@ -21,19 +21,28 @@
   ### 2.0 - MAIN (main):
   Title, motivational phrase, call to action with link, all over large inspirational background image.
   #### 2.1 - Text
-    Links: only one, to the motivational video.
+    Links: only one, to the motivational video. Texts are actually .png images.
 
     Expected behavior: on click on any part of the text, opens the link for the iPad on the same tab. On hover over the CtA, it changes it to underline.
+  #### 2.2 - Background Image
+    Link: none.
 
-  3.0 - BIG FOOTER (big-footer): positioned under the main part, a bar with four squares inline, full width, each contains an image and a link.
-    3.1 - Links: "iPhone 5 S", "iPhone 5 C", "Happy Birthday, Mac.", "Supplier Responsibilty".
-    3.2 - Expected behavior: on click on image, sends the user to the respective link on the same tab.
+    Expected behavior: static.
 
-  4.0 - SMALL FOOTER (small-footer): positioned at the bottom of the page, has two columns of links; the first has the contact to Apple and the legal Terms and Copyright; the second one contains other links, including one for choosing country.
-    4.1 - Links: First Column: "Apple Online Store", "Apple Retail Store", "reseller", "Terms of Use", "Privacy Policy"; Second Column: "Site Map", "Hot News", "RSS Feeds", "Media Info", "Environment", "Job Opportunities", "Contact Us", "Choose your country"(Flag of US).
-    4.2 - Expected behavior: links on hover, underlines; links on click, forward to the respective page in the same tab.
+  ### 3.0 - BIG FOOTER (big-footer):
+  Positioned under the main part, a bar with four squares inline, full width, each contains an image and a link.
+  #### 3.1 Square Images
+
+  Links: "iPhone 5 S", "iPhone 5 C", "Happy Birthday, Mac.", "Supplier Responsibilty".
+  Expected behavior: on click on image, sends the user to the respective link on the same tab.
+
+  #### 4.0 - SMALL FOOTER (small-footer):
+  Positioned at the bottom of the page, has two columns of links; the first has the contact to Apple and the legal Terms and Copyright; the second one contains other links, including one for choosing country.
+  #### 4.1 Columns:
+  Links: First: "Apple Online Store", "Apple Retail Store", "reseller", "Terms of Use", "Privacy Policy"; Second: "Site Map", "Hot News", "RSS Feeds", "Media Info", "Environment", "Job Opportunities", "Contact Us", "Choose your country"(Flag of US).
+  Expected behavior: links on hover, underlines; links on click, forward to the respective page in the same tab.
 
 
- FINAL COMMENTS ***************************************************************
+ ### FINAL COMMENTS ***************************************************************
 
- To quickly navigate the code, search for the respective section you want, like header or small-footer, preceded by an @, like this: @example.
+I have added the "@" symbol with the sections for easy navigation. To quickly navigate the code, search for the respective section you want, like header or small-footer, preceded by an @, like this: @example.

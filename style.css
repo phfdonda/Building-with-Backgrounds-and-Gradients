@@ -1,10 +1,10 @@
 /******************   TAGS   ***********************/
 
 body {
-  width: 100%;
-  padding: 0;
-  margin: 0;
   font-family: Lucida 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 body * {
@@ -13,30 +13,127 @@ body * {
 
 /*** @main ***/
 main {
+  z-index: -2;
+  background-repeat: no-repeat;
+  background-image: url(/resources/hero.png);
+  height: 550px;
+  left: 0;
   position: relative;
   top: 0;
-  left: 0;
-  background-color: blue;
-  height: 550px;
   width: 100%;
+}
+
+input {
+  /* outline: none; */
+  font-size: 100%;
+  font-family: inherit;
+  border-radius: 10px;
+  border-top: 2px solid rgb(62, 62, 62);
+  border-bottom: 1px solid rgb(134, 134, 134);
+  border-left: none;
+  border-right: none;
+  height: 19px;
+  width: 90px;
+  margin: 0 10px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+input[type=search]{
+  transition: all .5s;
+}
+
+input[type=search]:focus{
+  width: 130px;
+  background-color: white;
+
 }
 
 /******************   ID's   ***********************/
 
-/*** @nav-bar ***/
 #nav-bar {
-  width: 100px;
-  height: 100px;
-  background-color: chocolate;
+
+  height: 36px;
+  margin-left: calc(50% - 490px);
+  position: absolute;
+  top: 18px;
+  width: 980px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid rgb(123, 123, 123);
+  box-shadow: 0 1px 2px rgb(41, 41, 41);
+  border-radius: 3px;
 }
 
-/*** @big-footer ***/
+#background-hero {
+  height: 100%;
+  width: 100%;
+}
+
 #big-footer{
+
 }
 
-/*** @small-footer ***/
+#gradient {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  background-image: linear-gradient(to bottom, rgb(94, 94, 94), rgb(119, 119, 119));
+}
 
+#gradient2 {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 0;
+  background-image: linear-gradient(to bottom, rgb(136, 136, 136), rgb(112, 112, 112));
+}
+
+#magnify {
+  z-index: 3;
+  background-image: url(/resources/magnify.svg);
+  display: none;
+}
+
+#magnify-focus {
+  z-index: 3;
+  background-image: url(/resources/magnify-focus.svg);
+  display: none;
+}
+
+#search {
+  height: 100%;
+  z-index: 2;
+  border-left: 1px solid rgb(86, 86, 86);
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  display: none;
+}
 
 /*****************   CLASSES  **********************/
+.nav-link {
+  display: flex;
+  color: white;
+  min-width: 103px;
+  height: 100%;
+  z-index: 2;
+  text-shadow: 0 -1px rgb(57, 57, 57);
+  text-decoration: none;
+  border-left: 1px solid rgb(86, 86, 86);
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.home {
+  border-left: none;
+}
 
 /***************   MEDIA QUERIES   *****************/
