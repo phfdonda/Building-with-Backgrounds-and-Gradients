@@ -23,6 +23,10 @@ main {
   width: 100%;
 }
 
+.dark:hover {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2));
+}
+
 .input-container {
 }
 
@@ -71,13 +75,13 @@ a:hover {
   text-decoration: underline;
 }
 
-/******************   ID's   ***********************/
+/*****************   CLASSES  **********************/
 
-#nav-bar {
+.nav-bar {
   z-index: 3;
   height: 36px;
-  margin-left: calc(50% - 490px);
   position: absolute;
+  margin-left: calc(50% - 490px);
   top: 18px;
   width: 980px;
   display: flex;
@@ -89,44 +93,44 @@ a:hover {
   border-radius: 3px;
 }
 
-#apple-logo {
+.apple-logo {
   object-position: 0 105px;
 }
 
-#store {
+.store {
   object-position: 0 76px;
 }
 
-#mac {
+.mac {
   object-position: 0 46px;
 }
 
-#iPod {
+.iPod {
   object-position: 0 16px;
 }
 
-#iPhone {
+.iPhone {
   object-position: 0 -14px;
 }
 
-#iPad {
+.iPad {
   object-position: 0 -44px;
 }
 
-#iTunes {
+.iTunes {
   object-position: 0 -74px;
 }
 
-#support {
+.support {
   object-position: 0 -104px;
 }
 
-#background-hero {
+.background-hero {
   height: 100%;
   width: 100%;
 }
 
-#headlines {
+.headlines {
   z-index: 5;
   position: relative;
   top: 130px;
@@ -137,25 +141,25 @@ a:hover {
   flex-direction: column;
 }
 
-#headlines img {
+.headlines img {
   display: block;
   align-self: center;
 }
 
-#what-verse {
+.what-verse {
   object-position: 0 10px;
   width: 800px;
   max-width: 100%;
   max-height: 100%;
 }
 
-#something-to-share {
+.something-to-share {
   margin-top: 20px;
   object-fit: none;
   width: 800px;
 }
 
-#watch-video {
+.watch-video {
   margin-top: 30px;
   object-fit: none;
   object-position: -190px 1px;
@@ -163,11 +167,11 @@ a:hover {
   width: 600px;
 }
 
-#watch-video:hover {
+.watch-video:hover {
   object-position: -190px -31px;
 }
 
-#big-footer {
+.big-footer {
   width: 100%;
   height: 200px;
   margin: 2px 0 0 0;
@@ -175,14 +179,14 @@ a:hover {
   flex-wrap: nowrap;
 }
 
-#small-footer {
+.small-footer {
   width: 100%;
   padding: 0 100px;
   display: inline-flex;
   justify-content: space-around;
 }
 
-#gradient {
+.gradient {
   position: absolute;
   width: 100%;
   height: 50%;
@@ -194,7 +198,7 @@ a:hover {
   );
 }
 
-#gradient2 {
+.gradient2 {
   position: absolute;
   width: 100%;
   height: 50%;
@@ -206,7 +210,7 @@ a:hover {
   );
 }
 
-#magnify {
+.magnify {
   position: relative;
   left: 30px;
   width: 15px;
@@ -215,12 +219,12 @@ a:hover {
   /* display: none; */
 }
 
-#magnify-focus {
+.magnify-focus {
   background-image: url(/resources/magnify-focus.svg);
   display: none;
 }
 
-#search {
+.search {
   height: 100%;
   z-index: 2;
   border-left: 1px solid rgb(86, 86, 86);
@@ -229,18 +233,17 @@ a:hover {
   align-items: center;
 }
 
-#usa {
+.usa {
   position: relative;
   top: 3px;
 }
 
-/*****************   CLASSES  **********************/
 .nav-link {
   display: flex;
   color: white;
   overflow: hidden;
   min-width: 103px;
-  height: 30px;
+  height: 36px;
   z-index: 2;
   text-shadow: 0 -1px rgb(57, 57, 57);
   text-decoration: none;
