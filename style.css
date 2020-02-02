@@ -38,11 +38,11 @@ input {
   background-color: rgba(0, 0, 0, 0);
 }
 
-input[type=search]{
-  transition: all .5s;
+input[type=search] {
+  transition: all 0.5s;
 }
 
-input[type=search]:focus{
+input[type=search]:focus {
   width: 130px;
   background-color: white;
 
@@ -52,6 +52,19 @@ footer {
   padding: 0;
   margin: 0;
   border: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+a {
+  color: #0088CC;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /******************   ID's   ***********************/
@@ -78,9 +91,16 @@ footer {
 #big-footer {
   width: 100%;
   height: 200px;
-
   margin: 2px 0 0 0;
+  display: inline-flex;
+  flex-wrap: nowrap;
+}
 
+#small-footer {
+  width: 100%;
+  padding: 0 100px;
+  display: inline-flex;
+  justify-content: space-around;
 }
 
 #gradient {
@@ -120,8 +140,9 @@ footer {
   align-items: center;
 }
 
-.title {
-  display: none;
+#usa {
+  position: relative;
+  top: 3px;
 }
 
 /*****************   CLASSES  **********************/
@@ -141,19 +162,30 @@ footer {
   font-weight: 500;
 }
 
+.title {
+  display: none;
+}
+
 .home {
   border-left: none;
 }
 
 .bottom-box {
-  display: inline-block;
-  width: 25%;
-  height: 200px;
   background-repeat: no-repeat;
+  display: inline-block;
+  height: 200px;
+  width: 25%;
+  margin: 0 1px;
+}
+
+.bottom-box img {
+  object-fit: cover;
+  object-position: -20px 0;
 }
 
 .box1 {
-  background-image: url(/resources/promo_iphone5s.jpg);
+  width: 100%;
+  height: 100%;
 }
 
 .box2 {
@@ -166,6 +198,29 @@ footer {
 
 .box4 {
   background-image: url(/resources/promo_supplier_responsibility.jpg);
+}
+
+.footer-ad-link {
+  width: 100%;
+  height: 100%;
+}
+
+.column {
+  color:#6E6E6E;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 0.65rem;
+  list-style-type: none;
+  line-height: 1.4;
+}
+
+
+.second-clm li {
+  display: inline-block;
+  color: rgb(110, 110, 110);
+}
+
+.second-clm a {
+  padding: 0 2px;
 }
 
 /***************   MEDIA QUERIES   *****************/
