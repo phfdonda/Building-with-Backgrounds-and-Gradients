@@ -1,0 +1,355 @@
+/******************   TAGS   ***********************/
+
+body {
+  font-family:
+    Lucida "Lucida Sans",
+    Verdana,
+    sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+/*** @main ***/
+main {
+  background-repeat: no-repeat;
+  background-image: url(resources/hero.png);
+  height: 550px;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+input {
+  position: absolute;
+  top: 7px;
+  right: 5px;
+  border-radius: 10px;
+  border: none;
+  font-size: 100%;
+  overflow: hidden;
+  padding: 1px 0 1px 20px;
+  height: 20px;
+  width: 90px;
+  margin: 0 10px 0 0;
+  background-image: url(resources/globalsearch_field.png);
+  transition: width 0.5s ease-in-out;
+  transition: background-image 0.01;
+  color: white;
+}
+
+input[type="search"]:focus {
+  width: 140px;
+  background-position: 0 100%;
+  padding: 1px 0 1px 22px;
+  outline: none;
+  color: black;
+}
+
+input::-webkit-search-cancel-button {
+  position: relative;
+  right: 5px;
+  -webkit-appearance: none;
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  background-image: url(resources/globalsearch_reset.gif);
+  cursor: pointer;
+}
+
+footer {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+a {
+  color: #08c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*****************   CLASSES  **********************/
+
+.nav-bar {
+  z-index: 3;
+  height: 36px;
+  position: absolute;
+  margin-left: calc(50% - 490px);
+  top: 18px;
+  width: 990px;
+  display: flex;
+  object-fit: cover;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid rgb(123, 123, 123);
+  box-shadow: 0 1px 2px rgb(41, 41, 41);
+  border-radius: 3px;
+}
+
+.apple-logo {
+  object-position: 0 105px;
+}
+
+.store {
+  object-position: 0 76px;
+}
+
+.mac {
+  object-position: 0 46px;
+}
+
+.iPod {
+  object-position: 0 16px;
+}
+
+.iPhone {
+  object-position: 0 -14px;
+}
+
+.iPad {
+  object-position: 0 -44px;
+}
+
+.iTunes {
+  object-position: 0 -74px;
+}
+
+.support {
+  object-position: 0 -104px;
+}
+
+.input-container {
+  z-index: 3;
+  width: 160px;
+  padding: 0 15px;
+  height: 36px;
+  text-shadow: 0 -1px rgb(57, 57, 57);
+  transition: width ease-in-out 0.5s;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 0.8rem;
+}
+
+.input-container:focus-within {
+  width: 250px;
+}
+
+.vert-line {
+  z-index: 6;
+  width: 3px;
+  height: 36px;
+  background-color: #5c5c5c;
+  border-left: 1px solid #858585;
+  border-right: 1px solid #858585;
+}
+
+.background-hero {
+  height: 100%;
+  width: 100%;
+}
+
+.headlines {
+  z-index: 5;
+  position: relative;
+  top: 130px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 350px;
+  flex-direction: column;
+}
+
+.headlines img {
+  display: block;
+  align-self: center;
+}
+
+.what-verse {
+  object-position: 0 10px;
+  width: 800px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.something-to-share {
+  margin-top: 20px;
+  object-fit: none;
+  width: 800px;
+}
+
+.watch-video {
+  margin-top: 30px;
+  object-fit: none;
+  object-position: -190px 1px;
+  height: 33px;
+  width: 600px;
+}
+
+.watch-video:hover {
+  object-position: -190px -31px;
+}
+
+.big-footer {
+  width: 100%;
+  height: 200px;
+  margin: 2px 0 0 0;
+  display: inline-flex;
+  flex-wrap: nowrap;
+}
+
+.small-footer {
+  width: 100%;
+  padding: 0 100px;
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+.gradient {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgb(94, 94, 94),
+      rgb(119, 119, 119)
+    );
+}
+
+.gradient2 {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 0;
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgb(136, 136, 136),
+      rgb(112, 112, 112)
+    );
+}
+
+.magnify {
+  position: relative;
+  left: 30px;
+  width: 15px;
+  height: 15px;
+  background-image: url(resources/magnify.svg);
+}
+
+.magnify-focus {
+  background-image: url(resources/magnify-focus.svg);
+  display: none;
+}
+
+.search {
+  height: 100%;
+  z-index: 2;
+  border-left: 1px solid rgb(86, 86, 86);
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+}
+
+.usa {
+  position: relative;
+  top: 3px;
+}
+
+.nav-link {
+  display: flex;
+  color: white;
+  overflow: hidden;
+  min-width: 90px;
+  height: 36px;
+  z-index: 2;
+  text-shadow: 0 -1px rgb(57, 57, 57);
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.hidden-title {
+  display: none;
+}
+
+.title {
+  align-self: center;
+}
+
+.home {
+  border-left: none;
+}
+
+.bottom-box {
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 200px;
+  width: 25%;
+  margin: 0 1px;
+}
+
+.bottom-box img {
+  object-fit: cover;
+  object-position: -20px 0;
+}
+
+.box1 {
+  width: 100%;
+  height: 100%;
+}
+
+.box2 {
+  background-image: url(resources/promo_iphone5c.jpg);
+}
+
+.box3 {
+  background-image: url(resources/promo_30_years.jpg);
+}
+
+.box4 {
+  background-image: url(resources/promo_supplier_responsibility.jpg);
+}
+
+.footer-ad-link {
+  width: 100%;
+  height: 100%;
+}
+
+.column {
+  color: #6e6e6e;
+  font-family: "Lucida Sans", Verdana, sans-serif;
+  font-size: 0.65rem;
+  list-style-type: none;
+  line-height: 1.4;
+}
+
+.second-clm li {
+  display: inline-block;
+  color: rgb(110, 110, 110);
+}
+
+.second-clm a {
+  padding: 0 2px;
+}
+
+.nav-link:hover {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+}
+
+/***************   MEDIA QUERIES   *****************/

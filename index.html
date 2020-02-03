@@ -1,68 +1,167 @@
-<!--###################################################################
-
-  --------------  BUILDING WITH BACKGROUNDS AND GRADIENTS -------------------
-
-  DESCRIPTION- This page was created as a clone of the Apple page of 2014, for the Microverse's HTML and CSS course curriculum. The original can be seen in the following url: "https://web.archive.org/web/20140301004610/http://www.apple.com/".
-
-  AUTHOR - Pedro Henrique Ferreira Donda
-    GitHub: https://github.com/phfdonda
-    LinkedIn: https://www.linkedin.com/in/pedro-donda-808621bb/
-
-
-  ------------------------------- INDEX ---------------------------------------
-
-  1.0 - NAV-BAR: links for other parts of the website; search bar. They should be positioned in line beside each other. The bar itself is positioned on top of the page, centered, detached from the border of the screen.
-    1.1 - Links: "Home(Logo)", "Store", "Mac", "iPod", "iPhone", "iPad", "iTunes", "Support".
-      1.1.1 - Expected behavior: on hover, changes background color for a darker one; on click, opens respective link in the same tab.
-    1.2 - Search bar.
-      1.2.1 - Expected behavior: on click, expands bar and changes its color for white.
-
-  2.0 - MAIN: title, motivational phrase, call to action with link, all over large inspirational background image.
-    2.1 - Links: only one, to the motivational video.
-    2.1.1 - Expected behavior: on click on any part of the text, opens the link for the iPad on the same tab. On hover over the CtA, it changes to underline.
-
-  3.0 - BIG FOOTER: positioned under the main part, a bar with four squares inline, full width, each contains an image and a link.
-    3.1 - Links: "iPhone 5 S", "iPhone 5 C", "Happy Birthday, Mac.", "Supplier Responsibilty".
-    3.2 - Expected behavior: on click on image, sends the user to the respective link on the same tab.
-
-  4.0 - SMALL FOOTER: positioned at the bottom of the page, has two columns of links; the first has the contact to Apple and the legal Terms and Copyright; the second one contains other links, including one for choosing country.
-    4.1 - Links: First Column: "Apple Online Store", "Apple Retail Store", "reseller", "Terms of Use", "Privacy Policy"; Second Column: "Site Map", "Hot News", "RSS Feeds", "Media Info", "Environment", "Job Opportunities", "Contact Us", "Choose your country"(Flag of US).
-    4.2 - Expected behavior: links on hover, underlines; links on click, forward to the respective page in the same tab.
-
-####################################################################-->
-
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="stylesheet" href="styles.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Building with Backgrounds and Gradients</title>
+  </head>
 
-  <!-- ########### @header ################################################-->
+    <nav class="nav-bar">
+      <a class="nav-link home" href="#">
+        <img
+          class="apple-logo"
+          alt="nav-link"
+          src="resources/globalnav_text.svg"
+        />
+      </a>
+      <div class="vert-line"></div>
+      <a class="nav-link" href="#">
+        <img class="store" alt="nav-link" src="resources/globalnav_text.svg" />
+      </a>
+         <div class="vert-line"></div>
+      <a class="nav-link" href="#">
+        <img class="mac" alt="nav-link" src="resources/globalnav_text.svg" />
+      </a>
+         <div class="vert-line"></div>
+      <a class="nav-link" href="#">
+        <img class="iPod" alt="nav-link" src="resources/globalnav_text.svg" />
+      </a>
+         <div class="vert-line"></div>
+      <a class="nav-link" href="#">
+        <img
+          class="iPhone"
+          alt="nav-link"
+          src="resources/globalnav_text.svg"
+        />
+      </a>
+         <div class="vert-line"></div>
+      <a class="nav-link" href="#">
+        <img class="iPad" alt="nav-link" src="resources/globalnav_text.svg" />
+      </a>
+         <div class="vert-line"></div>
+      <a class="nav-link" href="#">
+        <img
+          class="iTunes"
+          alt="nav-link"
+          src="resources/globalnav_text.svg"
+        />
+      </a>
+         <div class="vert-line"></div>
+      <a class="nav-link" href="#"
+        ><img class="support" alt="nav-link" src="resources/globalnav_text.svg"
+      /></a>
+   <div class="vert-line"></div>
+      <div class="input-container">
 
-  <header id="nav-bar"></header>
+        <form >
+          <input type="search"/>
+        </form>
+      </div>
+      <div class="gradient"></div>
+      <div class="gradient2"></div>
+    </nav>
 
+    <!-- ### @main ###################################-->
 
-  <!-- ########### @main ##################################################-->
+    <main>
+      <h1 class="hidden-title">What will your verse be?</h1>
 
-  <main></main>
+      <div class="headlines">
+        <div class="title">
+          <a href="#">
+            <img
+              class="what-verse"
+              alt="what verse"
+              src="resources/what-verse.png"
+            />
+          </a>
+        </div>
+        <div class="title">
+          <a href="#">
+            <img
+              class="something-to-share"
+              alt="something to share"
+              src="resources/something-to-share.png"
+          /></a>
+        </div>
+        <div class="title">
+          <a class="watch-video-link" href="#">
+            <img
+              class="watch-video"
+              alt="watch video"
+              src="resources/watch-video.png"
+          /></a>
+        </div>
+      </div>
+    </main>
 
+    <!-- ### @big-footer #############################-->
 
-  <!-- ########### @big-footer ############################################-->
+    <footer class="big-footer">
+      <div class="bottom-box">
+        <a class="footer-ad-link" href="#"
+          ><img
+            src="resources/promo_iphone5s.jpg"
+            alt="promo iphone 5S"
+            class="box1"
+        /></a>
+      </div>
+      <div class="bottom-box">
+        <a class="footer-ad-link" href="#"
+          ><img
+            src="resources/promo_iphone5c.jpg"
+            alt="promo iphone 5C"
+            class="box2"
+        /></a>
+      </div>
+      <div class="bottom-box">
+        <a class="footer-ad-link" href="#"
+          ><img
+            src="resources/promo_30_years.jpg"
+            alt="promo 30 years"
+            class="box3"
+        /></a>
+      </div>
+      <div class="bottom-box">
+        <a class="footer-ad-link" href="#"
+          ><img
+            src="resources/promo_supplier_responsibility.jpg"
+            alt="promo supplier responsibility"
+            class="box4"
+        /></a>
+      </div>
+    </footer>
 
-  <footer id="big-footer"></footer>
+    <!-- ### @small-footer ###########################-->
 
-  
-
-  <!-- ########### @small-footer ##########################################-->
-
-  <footer id="small-footer"></footer>
-
-</body>
+    <footer class="small-footer">
+      <ul class="column">
+        <li>
+          <p>
+            Shop the <a href="#"> Apple Online Store</a> (1-800-MY-APPLE), visit
+            an <a href="#"> Apple Retail Store</a>, or find a
+            <a href="#"> reseller</a>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Copyright © 2014 Apple Inc. All rights reserved.
+            <a href="#"> Terms of Use</a> | <a href="#">Privacy Policy</a>
+          </p>
+        </li>
+      </ul>
+      <ul class="column second-clm">
+        <li><a href="#">Site Map</a> |</li>
+        <li><a href="#">Hot News</a> |</li>
+        <li><a href="#">RSS Feeds</a> |</li>
+        <li><a href="#">Media Info</a> |</li>
+        <li><a href="#">Environment</a> |</li>
+        <li><a href="#">Job Opportunities</a> |</li>
+        <li><a href="#">Contact Us</a> |</li>
+        <li>
+          <a href="#"><img class="usa" src="resources/usa.png" alt=""/></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
-
