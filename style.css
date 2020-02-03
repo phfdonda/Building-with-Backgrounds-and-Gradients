@@ -28,32 +28,36 @@ main {
 }
 
 .input-container {
+  z-index: 3;
+}
+
+.search {
 }
 
 input {
-  font-size: 100%;
-  font-family: inherit;
   border-radius: 10px;
   border-top: 2px solid rgb(62, 62, 62);
   border-bottom: 1px solid rgb(134, 134, 134);
   border-left: none;
   border-right: none;
-  height: 22px;
-  width: 110px;
+  border: none;
+  font-size: 100%;
+  font-family: inherit;
+  height: 19px;
+  width: 90px;
   margin: 0 10px 0 0;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-input[type="search"] {
-  transition: all 0.3s;
+  background-image: url(/resources/globalsearch_field.png);
+  transition: width 0.5s ease-in-out;
+  transition: background-image 0.01;
 }
 
 input[type="search"]:focus {
   width: 140px;
-  background-color: white;
+  background-position: 0 100%;
   outline: none;
   padding: 2px 18px 1px 22px;
   right: 50px;
+
 }
 
 footer {
