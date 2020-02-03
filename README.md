@@ -15,10 +15,10 @@
 
 ### Check it online!
 
-  [Live Preview](https://phfdonda.github.io/Building-with-Backgrounds-and-Gradients/)
+  [Live Preview](https://rawcdn.githack.com/phfdonda/Building-with-Backgrounds-and-Gradients/31de18df7877c7aba97976ecc9d17ceec24d5a2e/index.html)
 
 ### Contributions and issues are welcome!
-For a short guide of the site, you can [click here](/markdown.md)
+For a short guide of the site, you can [click here](markdown.md)
 
 License
 This project is MIT licensed.
