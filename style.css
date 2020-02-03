@@ -17,7 +17,7 @@ body * {
 /*** @main ***/
 main {
   background-repeat: no-repeat;
-  background-image: url(/resources/hero.png);
+  background-image: url(resources/hero.png);
   height: 550px;
   left: 0;
   position: relative;
@@ -37,7 +37,7 @@ input {
   height: 20px;
   width: 90px;
   margin: 0 10px 0 0;
-  background-image: url(/resources/globalsearch_field.png);
+  background-image: url(resources/globalsearch_field.png);
   transition: width 0.5s ease-in-out;
   transition: background-image 0.01;
   color: white;
@@ -58,7 +58,7 @@ input::-webkit-search-cancel-button {
   height: 10px;
   width: 10px;
   border-radius: 10px;
-  background-image: url(/resources/globalsearch_reset.gif);
+  background-image: url(resources/globalsearch_reset.gif);
   cursor: pointer;
 }
 
@@ -247,11 +247,11 @@ a:hover {
   left: 30px;
   width: 15px;
   height: 15px;
-  background-image: url(/resources/magnify.svg);
+  background-image: url(resources/magnify.svg);
 }
 
 .magnify-focus {
-  background-image: url(/resources/magnify-focus.svg);
+  background-image: url(resources/magnify-focus.svg);
   display: none;
 }
 
@@ -315,15 +315,15 @@ a:hover {
 }
 
 .box2 {
-  background-image: url(/resources/promo_iphone5c.jpg);
+  background-image: url(resources/promo_iphone5c.jpg);
 }
 
 .box3 {
-  background-image: url(/resources/promo_30_years.jpg);
+  background-image: url(resources/promo_30_years.jpg);
 }
 
 .box4 {
-  background-image: url(/resources/promo_supplier_responsibility.jpg);
+  background-image: url(resources/promo_supplier_responsibility.jpg);
 }
 
 .footer-ad-link {
