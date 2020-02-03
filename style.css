@@ -222,10 +222,11 @@ a:hover {
   height: 50%;
   bottom: 0;
   background-image:
-    linear-gradient (to bottom,
-    rgb(94, 94, 94),
-    rgb(119, 119, 119)
-  );
+    linear-gradient(
+      to bottom,
+      rgb(94, 94, 94),
+      rgb(119, 119, 119)
+    );
 }
 
 .gradient2 {
@@ -234,10 +235,11 @@ a:hover {
   height: 50%;
   top: 0;
   background-image:
-    linear-gradient (to bottom,
-    rgb(136, 136, 136),
-    rgb(112, 112, 112)
-  );
+    linear-gradient(
+      to bottom,
+      rgb(136, 136, 136),
+      rgb(112, 112, 112)
+    );
 }
 
 .magnify {
