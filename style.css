@@ -57,6 +57,7 @@ input::-webkit-search-cancel-button {
   width: 10px;
   border-radius: 10px;
   background-image: url(/resources/globalsearch_reset.gif);
+  cursor: pointer;
 }
 
 footer {
@@ -86,7 +87,7 @@ a:hover {
   position: absolute;
   margin-left: calc(50% - 490px);
   top: 18px;
-  width: 980px;
+  width: 990px;
   display: flex;
   object-fit: cover;
   justify-content: space-around;
@@ -134,7 +135,7 @@ a:hover {
   padding: 0 15px;
   height: 36px;
   text-shadow: 0 -1px rgb(57, 57, 57);
-  border-left: 1px solid rgb(86, 86, 86);
+  /* border-left: 1px solid rgb(86, 86, 86); */
   transition: width ease-in-out 0.5s;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 0.8rem;
@@ -142,6 +143,15 @@ a:hover {
 
 .input-container:focus-within {
   width: 250px;
+}
+
+.vert-line {
+  z-index: 6;
+  width: 3px;
+  height: 36px;
+  background-color: #5c5c5c;
+  border-left: 1px solid #858585;
+  border-right: 1px solid #858585;
 }
 
 .background-hero {
@@ -266,7 +276,7 @@ a:hover {
   z-index: 2;
   text-shadow: 0 -1px rgb(57, 57, 57);
   text-decoration: none;
-  border-left: 1px solid rgb(86, 86, 86);
+  /* border-left: 1px solid rgb(86, 86, 86); */
   justify-content: center;
   align-items: center;
   font-size: 0.8rem;
