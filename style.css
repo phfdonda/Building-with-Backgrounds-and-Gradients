@@ -23,7 +23,7 @@ main {
   width: 100%;
 }
 
-.dark:hover {
+.nav-link:hover {
   background-image: radial-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2));
 }
 
