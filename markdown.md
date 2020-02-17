@@ -29,7 +29,7 @@
 
   #### 4.0 - SMALL FOOTER (small-footer):
   Positioned at the bottom of the page, has two columns of links; the first has the contact to Apple and the legal Terms and Copyright; the second one contains other links, including one for choosing country.
-  #### 4.1 Columns:
+  ### 4.1 Columns:
   Links: First: "Apple Online Store", "Apple Retail Store", "reseller", "Terms of Use", "Privacy Policy"; Second: "Site Map", "Hot News", "RSS Feeds", "Media Info", "Environment", "Job Opportunities", "Contact Us", "Choose your country"(Flag of US).
   Expected behavior: links on hover, underlines; links on click, forward to the respective page in the same tab.
 
